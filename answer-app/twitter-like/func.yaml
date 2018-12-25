@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: twitter-like
+version: 0.0.8
+runtime: node
+entrypoint: node func.js
+format: http-stream
+triggers:
+- name: twitter-like-trigger
+  type: http
+  source: /twitter-like-trigger

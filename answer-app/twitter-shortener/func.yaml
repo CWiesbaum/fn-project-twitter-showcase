@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: twitter-shortener
+version: 0.0.5
+runtime: node
+entrypoint: node func.js
+format: http-stream
+triggers:
+- name: twitter-shortener-trigger
+  type: http
+  source: /twitter-shortener-trigger

@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: twitter-destroy-tweet
+version: 0.0.6
+runtime: node
+entrypoint: node func.js
+format: http-stream
+triggers:
+- name: twitter-destroy-tweet-trigger
+  type: http
+  source: /twitter-destroy-tweet-trigger

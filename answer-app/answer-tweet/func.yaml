@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: answer-tweet
+version: 0.0.34
+runtime: node
+entrypoint: node func.js
+format: http-stream
+triggers:
+- name: answer-tweet-trigger
+  type: http
+  source: /answer-tweet-trigger

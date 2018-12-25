@@ -1,0 +1,12 @@
+schema_version: 20180708
+name: twitter-flow
+version: 0.0.2
+runtime: java
+build_image: fnproject/fn-java-fdk-build:jdk9-1.0.75
+run_image: fnproject/fn-java-fdk:jdk9-1.0.75
+cmd: com.esentri.twitter.flow.TwitterFlow::handleTweets
+format: http-stream
+triggers:
+- name: twitterflow
+  type: http
+  source: /twitterflow

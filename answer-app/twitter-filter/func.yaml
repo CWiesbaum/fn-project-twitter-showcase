@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: twitter-filter
+version: 0.0.53
+runtime: node
+entrypoint: node func.js
+format: http-stream
+triggers:
+- name: twitter-filter-trigger
+  type: http
+  source: /twitter-filter-trigger

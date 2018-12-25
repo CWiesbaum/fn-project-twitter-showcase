@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: twitter-show-tweet
+version: 0.0.17
+runtime: node
+entrypoint: node func.js
+format: http-stream
+triggers:
+- name: twitter-show-tweet-trigger
+  type: http
+  source: /twitter-show-tweet-trigger
