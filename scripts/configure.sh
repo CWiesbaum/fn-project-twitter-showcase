@@ -37,7 +37,7 @@ fn config app $APP_NAME COMPLETER_BASE_URL "http://$FLOWSERVER_IP:8081"
 
 fn config app $APP_NAME ANSWER_TWEET_ID $(fn inspect fn $APP_NAME answer-tweet | jq  -rM .id)
 fn config app $APP_NAME TWITTER_SHORTENER_ID $(fn inspect fn $APP_NAME twitter-shortener | jq  -rM .id)
-fn config app $APP_NAME TWITTER_FILTER_ID $(fn inspect fn $APP_NAME twitter-filter | jq -rM .id)
+fn config app $APP_NAME TWITTER_FILTER_FOLLOW_ID $(fn inspect fn $APP_NAME twitter-filter-follow | jq -rM .id)
 fn config app $APP_NAME SAVE_FILE_ID $(fn inspect fn $APP_NAME save-file | jq -rM .id)
 fn config app $APP_NAME FOLLOWER_COUNT 5
 fn config app $APP_NAME TWIT_CONSUMER_KEY <TWIT_CONSUMER_KEY>
